@@ -14,89 +14,91 @@ if ( function_exists( 'register_sidebar' ) ) {
         'after_title' => '</h3>',
         'after_widget' => '',
     ) );
-} {
-    register_sidebar( array(
-        'name' => '（首页）小工具①',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-        'after_widget' => '',
-    ) );
-} {
-    register_sidebar( array(
-        'name' => '（首页）小工具②',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-        'after_widget' => '',
-    ) );
-} {
-    register_sidebar( array(
-        'name' => '（首页）小工具③',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-        'after_widget' => '',
-    ) );
-} {
-    register_sidebar( array(
-        'name' => '（页面）小工具①',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-        'after_widget' => '',
-    ) );
-} {
-    register_sidebar( array(
-        'name' => '（页面）小工具②',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-        'after_widget' => '',
-    ) );
-} {
-    register_sidebar( array(
-        'name' => '（页面）小工具③',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-        'after_widget' => '',
-    ) );
-} {
-    register_sidebar( array(
-        'name' => '（文章页）小工具①',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-        'after_widget' => '',
-    ) );
-} {
-    register_sidebar( array(
-        'name' => '（文章页）小工具②',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-        'after_widget' => '',
-    ) );
-} {
-    register_sidebar( array(
-        'name' => '（文章页）小工具③',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-        'after_widget' => '',
-    ) );
 }
-
+/**
+  {
+  register_sidebar( array(
+  'name' => '（首页）小工具①',
+  'before_widget' => '',
+  'after_widget' => '',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+  'after_widget' => '',
+  ) );
+  } {
+  register_sidebar( array(
+  'name' => '（首页）小工具②',
+  'before_widget' => '',
+  'after_widget' => '',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+  'after_widget' => '',
+  ) );
+  } {
+  register_sidebar( array(
+  'name' => '（首页）小工具③',
+  'before_widget' => '',
+  'after_widget' => '',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+  'after_widget' => '',
+  ) );
+  } {
+  register_sidebar( array(
+  'name' => '（页面）小工具①',
+  'before_widget' => '',
+  'after_widget' => '',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+  'after_widget' => '',
+  ) );
+  } {
+  register_sidebar( array(
+  'name' => '（页面）小工具②',
+  'before_widget' => '',
+  'after_widget' => '',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+  'after_widget' => '',
+  ) );
+  } {
+  register_sidebar( array(
+  'name' => '（页面）小工具③',
+  'before_widget' => '',
+  'after_widget' => '',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+  'after_widget' => '',
+  ) );
+  } {
+  register_sidebar( array(
+  'name' => '（文章页）小工具①',
+  'before_widget' => '',
+  'after_widget' => '',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+  'after_widget' => '',
+  ) );
+  } {
+  register_sidebar( array(
+  'name' => '（文章页）小工具②',
+  'before_widget' => '',
+  'after_widget' => '',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+  'after_widget' => '',
+  ) );
+  } {
+  register_sidebar( array(
+  'name' => '（文章页）小工具③',
+  'before_widget' => '',
+  'after_widget' => '',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>',
+  'after_widget' => '',
+  ) );
+  }
+ */
 // 自定义菜单
 register_nav_menus(
         array(
@@ -472,40 +474,40 @@ function tearsnow_comment( $comment, $args, $depth ) {
                         echo '';
                     }
                     ?>
-                <?php
+                    <?php
                 } else {
                     include(TEMPLATEPATH . '/comment_gravatar.php');
                 }
                 ?>
                 <div class="floor"><?php
-                    if ( !$parent_id = $comment->comment_parent ) {
-                        switch ( $commentcount ) {
-                            case 2 :echo "沙发";
-                                --$commentcount;
-                                break;
-                            case 3 :echo "板凳";
-                                --$commentcount;
-                                break;
-                            case 4 :echo "地板";
-                                --$commentcount;
-                                break;
-                            default:printf( '%1$s楼', --$commentcount );
-                        }
-                    }
-                    ?>
+            if ( !$parent_id = $comment->comment_parent ) {
+                switch ( $commentcount ) {
+                    case 2 :echo "沙发";
+                        --$commentcount;
+                        break;
+                    case 3 :echo "板凳";
+                        --$commentcount;
+                        break;
+                    case 4 :echo "地板";
+                        --$commentcount;
+                        break;
+                    default:printf( '%1$s楼', --$commentcount );
+                }
+            }
+                ?>
                 </div><strong><?php comment_author_link() ?></strong><?php get_author_class( $comment->comment_author_email, $comment->user_id ) ?>:<?php edit_comment_link( '编辑', '&nbsp;&nbsp;', '' ); ?></div>
             <?php if ( $comment->comment_approved == '0' ) : ?>
                 <span style="color:#C00; font-style:inherit">您的评论正在等待审核中...</span>
                 <br />
-                <?php endif; ?>
-                <?php comment_text() ?>
+            <?php endif; ?>
+            <?php comment_text() ?>
 
             <div class="clear"></div><span class="datetime"><?php comment_date( 'Y-m-d' ) ?> <?php comment_time() ?> </span> <span class="reply"><?php
-                if ( is_user_logged_in() ) {
-                    $url = get_bloginfo( 'url' );
-                    echo '<a id="delete-' . $comment->comment_ID . '" href="' . wp_nonce_url( "$url/wp-admin/comment.php?action=deletecomment&amp;p=" . $comment->comment_post_ID . '&amp;c=' . $comment->comment_ID, 'delete-comment_' . $comment->comment_ID ) . '"" >[删除]</a>';
-                }
-                ?> <?php comment_reply_link( array_merge( $args, array( 'reply_text' => '[回复]', 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?></span>
+        if ( is_user_logged_in() ) {
+            $url = get_bloginfo( 'url' );
+            echo '<a id="delete-' . $comment->comment_ID . '" href="' . wp_nonce_url( "$url/wp-admin/comment.php?action=deletecomment&amp;p=" . $comment->comment_post_ID . '&amp;c=' . $comment->comment_ID, 'delete-comment_' . $comment->comment_ID ) . '"" >[删除]</a>';
+        }
+            ?> <?php comment_reply_link( array_merge( $args, array( 'reply_text' => '[回复]', 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?></span>
         </div>
         <?php
     }

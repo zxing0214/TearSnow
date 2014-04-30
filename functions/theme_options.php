@@ -157,7 +157,7 @@ $options = array(
         "desc" => "可用相对路径，绝对请加“http://”",
         "id" => $shortname . "_logodress",
         "type" => "text",
-        "std" => "/wp-content/themes/tearsnow/images/logo.png" ),
+        "std" => "/wp-content/themes/TearSnow/images/logo.png" ),
     array( "name" => "请输入我想说头像邮箱",
         "desc" => "输入Gravatar的注册邮箱，才能正确显示头像",
         "id" => $shortname . "_Gravatar",
@@ -754,4 +754,3 @@ function mytheme_admin() {
     add_action( 'wp_head', 'mytheme_wp_head' );
     add_action( 'admin_init', 'mytheme_add_init' );
     add_action( 'admin_menu', 'mytheme_add_admin' );
-    
