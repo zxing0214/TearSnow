@@ -119,7 +119,7 @@ a:hover.piro_prev {
 	margin:-300px 0 0 -400px;
 	display:block;
 	z-index:99998;
-	font-family:Trebuchet MS,Arial;
+	font-family:"微软雅黑","Microsoft YaHei","宋体",SimSun,PMingLiU,Verdana,Arial,Helvetica,sans-serif;
 }
 .pirobox_content table,tbody,tr,th,td {
 	margin:0;

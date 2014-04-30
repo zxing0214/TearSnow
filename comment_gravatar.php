@@ -1,1 +1,2 @@
-<?php echo get_avatar( $comment, 40 ); ?>
+<?php
+echo get_avatar( $comment, 40 );
