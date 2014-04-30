@@ -1,0 +1,28 @@
+欢迎购买TearSnow收费主题：
+
+当前主题版本：2.4
+
+使用主题前请确保你已经认真阅读TearSnow主题操作说明
+
+
+文章已经详细的讲解了主题是如何使用的，如果还有疑问，请至泪雪博客（http://zhangzifan.com）留言。
+
+
+注意：
+如果你使用是Windows主机、当然也有可能是Linux主机，同时发表评论时就显示错误的，请删除主题中的comments-ajax.php，并将comments-ajax2.php 的名字替换为comments-ajax.php，如果还有问题，请留言。
+
+
+补充：
+泪雪已经将LOGO的PSD源文件放置在主题的更目录，需要修改的请用软件自行修改和上传，LOGO路径可在主题设置中更改。
+
+
+如有疑问，欢迎联系！
+
+作者：泪雪（张子凡）
+Q Q ：592651505
+E-mail：leixue@leiue.com
+Blog：http://zhangzifan.com
+
+
+
+                                                                  2014.04.10
